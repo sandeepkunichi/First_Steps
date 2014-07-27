@@ -1,0 +1,10 @@
+import scala.io.Source
+object CountWords {
+	def NumOfWords(file:String):Int = {
+		val temp = Source.fromFile(file)
+		temp.getLines().flatMap(_.split(" ")).toList.length
+	}
+	def main(args:Array[String]): Unit = {
+		println(NumOfWords("file.txt"))
+	}
+}
