@@ -1,0 +1,14 @@
+object FibSum {
+	def Fib(num:Int):Int = {
+		if(num==0) 0
+		else if(num==1) 1
+		else Fib(num-1)+Fib(num-2)
+	}
+	def Sum_Fib(lim:Int):Int = {
+		val temp = (1 to lim) map {Fib(_)}
+		temp.toList.sum
+	}
+	def main(args: Array[String]): Unit = {
+		println(Sum_Fib(100))
+	}
+}
