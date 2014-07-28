@@ -1,0 +1,8 @@
+object Palindrome {
+  def ispalindrome(str:String):Boolean = {
+    if(str.toLowerCase==str.toLowerCase.reverse) true else false
+  }
+  def main(args: Array[String]) = {
+    println(ispalindrome("Kayak"))
+  }
+}
