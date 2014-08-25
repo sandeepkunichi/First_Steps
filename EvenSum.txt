@@ -1,0 +1,8 @@
+object EvenSum {
+  def sumofEven(n:Int):Int = {
+    (2 to n).filter(x=>if(x%2==0) true else false).sum
+  }
+  def main(args:Array[String]):Unit = {
+    println(sumofEven(30))
+  }
+}
